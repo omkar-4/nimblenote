@@ -12,4 +12,5 @@ neutralino.js
 .storage
 *.log
 
-.tmp
+/.tmp
+/.storage

@@ -1,5 +1,6 @@
 try {
-  let url = "https://";
+
+  let url = "https://raw.githubusercontent.com/omkar-4/nimblenote/main/update-manifest.json";
   let manifest = await Neutralino.updater.checkForUpdates(url);
 
   if (manifest.version != NL_APPVERSION) {
@@ -12,6 +13,4 @@ try {
   // handle error
   console.error("error updating the app", err);
   console.error(err.code, err.message);
-  
-
 }

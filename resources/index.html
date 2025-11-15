@@ -5,32 +5,36 @@
     <title>NeutralinoJs sample app</title>
     <link rel="shortcut icon" href="/icons/appIcon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/js/neutralino.js"></script>
     <script src="/js/checkRootStatus.js"></script>
-    <script type="module" src="/js/checkForUpdates.js"></script>
+    <!-- <script type="module" defer src="/js/checkForUpdates.js"></script> -->
   </head>
   <body>
     <div id="neutralinoapp">
-      <h1>NeutralinoJs</h1>
-      <div id="info"></div>
-      <br />
-      <img src="/icons/logo.gif" alt="Neutralinojs" />
-      <div>
-        <a href="#" onclick="openDocs();">Docs</a> &middot;
-        <a href="#" onclick="openTutorial();">Video tutorial</a>
-      </div>
+      <!-- <img src="/icons/logo.gif" alt="Neutralinojs" /> -->
+
       <div id="menubar">
-        <button class="icon-btn">[| ]</button>
-        <button class="icon-btn" onclick="createNewNote();">+</button>
+        <button class="icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M21 3C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21ZM7 5H4V19H7V5ZM20 5H9V19H20V5Z"
+            ></path>
+          </svg>
+        </button>
+        <button class="icon-btn" onclick="createNewNote();">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+          </svg>
+        </button>
       </div>
       <div id="writing-area-container">
-        <textarea name="writing-area" id="writing-area" placeholder="Ok, so ..."></textarea>
+        <textarea name="writing-area" id="writing-area"></textarea>
       </div>
     </div>
     <!-- Neutralino.js client. This file is gitignored, 
         because `neu update` typically downloads it.
         Avoid copy-pasting it. 
         -->
-    <script src="/js/neutralino.js"></script>
     <!-- Your app's source files -->
     <script src="/js/main.js"></script>
     <script src="/js/logic.js"></script>

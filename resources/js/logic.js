@@ -3,3 +3,5 @@ async function createNewNote() {
 }
 
 console.log(NL_DATAPATH);
+
+

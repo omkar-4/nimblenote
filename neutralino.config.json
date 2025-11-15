@@ -17,7 +17,8 @@
     "app.*",
     "os.*",
     "debug.log",
-    "filesystem.writeBinaryFile"
+    "filesystem.writeBinaryFile",
+    "storage.*"
   ],
   "globalVariables": {
     "TEST1": "Hello",
